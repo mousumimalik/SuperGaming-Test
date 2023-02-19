@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f9faff;
+  color: #3a3c47;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #15c39a;
+}
+
+h1 {
+  margin-top: 48px;
+}
+
+form {
+  background: #fff;
+  max-width: 360px;
+  width: 100%;
+  padding: 58px 44px;
+  border: 1px solid #e1e2f0;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
+  transition: all 0.3s ease;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.row label {
+  font-size: 13px;
+  color: #8086a9;
+}
+
+.row input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #d6d8e6;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease-out;
+}
+
+.row input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.row input::placeholder {
+  color: #c8cddf;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #15c39a;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+  transition: background 0.2s ease-out;
+}
+
+button:hover {
+  background: #55d3ac;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 458px) {
+  body {
+    margin: 0 18px;
+  }
+
+  form {
+    background: #f9faff;
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* CARDS */
+
+.container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .top-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 105px;
+}
+
+.container .top-container .username-container {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.container .top-container .logout-container {
+  width: 150px;
+  height: 50px;
+}
+
+.container .top-container .logout-container button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.meta p,
+.col {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.data-container.cards {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.editIcon {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editIcon p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+  color: gray;
+}
+
+.editIcon i {
+  font-size: medium;
+  color: gray;
+  cursor: pointer;
+}
+
+.editIcon i:hover {
+  color: #15c39a;
+}
+
+#eyeIcon:hover {
+  color: #15c39a;
+}
+
+/* UPDATE */
+
+.updateContainer {
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateContainer .innerUpdateCOntainer {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 20px -20px 60px #bebebe, -20px 20px 60px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateContainer .innerUpdateCOntainer h3 {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.updateContainer .innerUpdateCOntainer .updatableFIelds {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.updateContainer .innerUpdateCOntainer .updatableFIelds .inputClass {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.updateContainer .innerUpdateCOntainer .updatableFIelds .inputClass label {
+  width: 30%;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: serif;
+  text-align: start;
+}
+
+.updateContainer .innerUpdateCOntainer .updatableFIelds .inputClass .inputBox {
+  max-width: 200px;
+  height: 50px;
+}
+
+.updateContainer .innerUpdateCOntainer .buttonFields {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateContainer .innerUpdateCOntainer .btnBox {
+  width: 200px;
+  height: 40px;
+  margin: 0 10px;
+  background: #15c39a;
+} 
+
+.updateContainer .innerUpdateCOntainer .btnBox:hover {
+  background: #87e3ce;
+  color: white;
+}
+
+#cancel-button {
+  background: gray;
+  color: white;
+}
+
+#cancel-button:hover {
+  background: rgb(212, 208, 208);
+  color: white;
+}
+
+.error-msg-reason {
+  color: red;
+}
+
+.error-container {
+  margin-top: 25px;
+}

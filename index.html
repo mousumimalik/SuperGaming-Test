@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Supergaming</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <form id="formContainer">
+      <div class="row">
+        <label for="email">Email</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          autocomplete="off"
+          placeholder="username"
+        />
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" />
+      </div>
+      <button type="submit" id="login_btn">Login</button>
+    </form>
+
+    <div class="error-container hide"></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

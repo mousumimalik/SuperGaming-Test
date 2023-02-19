@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Update</title>
+  </head>
+  <body>
+    <div class="updateContainer">
+      <div class="innerUpdateCOntainer">
+        <h3>Update Form</h3>
+
+        <div class="updatableFIelds">
+          <div class="ui input inputClass">
+            <label for="text">Quality</label>
+            <select class="ui selection dropdown inputBox" id="quality_drpdown">
+              <option value="Common">Common</option>
+              <option value="Rare">Rare</option>
+              <option value="Epic">Epic</option>
+            </select>
+          </div>
+          <div class="ui input inputClass">
+            <label for="text">Health</label>
+            <input
+              type="number"
+              placeholder="Health"
+              class="inputBox"
+              id="health_input"
+            />
+          </div>
+          <div class="ui input inputClass">
+            <label for="text">Attack</label>
+            <input
+              type="number"
+              placeholder="Attack"
+              class="inputBox"
+              id="attck_input"
+            />
+          </div>
+          <div class="ui input inputClass">
+            <label for="text">Maximum Target Count</label>
+            <input
+              type="number"
+              placeholder="Maximum Target Count"
+              class="inputBox"
+              id="mtc_input"
+            />
+          </div>
+          <div class="ui input inputClass">
+            <label for="text">Spawn Cool Down(in seconds)</label>
+            <input
+              type="text"
+              placeholder="Spawn Cool Down"
+              class="inputBox"
+              id="scd_input"
+            />
+          </div>
+          <div class="ui input inputClass">
+            <label for="text">Spawn Cost</label>
+            <input
+              type="number"
+              placeholder="Spawn Cost"
+              class="inputBox"
+              id="sc_input"
+            />
+          </div>
+        </div>
+
+        <div class="buttonFields">
+          <button class="ui primary button btnBox" id="update-button">
+            Update
+          </button>
+          <button class="ui button btnBox" id="cancel-button">Cancel</button>
+        </div>
+
+        <div class="error-container"></div>
+      </div>
+    </div>
+
+    <script type="module" src="./update.js"></script>
+  </body>
+</html>
